@@ -10,7 +10,7 @@ using TennisPartCore.Models;
 namespace TennisPartCore.Migrations
 {
     [DbContext(typeof(TennisPartDbContext))]
-    [Migration("20190509195658_Init")]
+    [Migration("20190511211707_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

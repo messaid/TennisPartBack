@@ -234,8 +234,7 @@ namespace TennisPartCore.Migrations
                         name: "FK_PartieProposes_AspNetUsers_IdJoueurProposantId",
                         column: x => x.IdJoueurProposantId,
                         principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateIndex(

@@ -36,7 +36,7 @@ namespace TennisPartCore
                     (resolver as DefaultContractResolver).NamingStrategy = null;
                 }
             });
-            services.AddDbContext<TennisPartDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DevConnection")));
+            services.AddDbContext<TennisPartDbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DevConnection"))).AddDefaultIdentity<Joueur>().AddEntityFrameworkStores<TennisPartDbContext>();
             services.AddCors();
 
 
